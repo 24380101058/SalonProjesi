@@ -4,7 +4,7 @@ import '../models/spor_model.dart';
 class SporKarti extends StatelessWidget {
   final Spor spor;
 
-  const SporKarti({Key? key, required this.spor}) : super(key: key);
+  const SporKarti({super.key, required this.spor});
 
   @override
   Widget build(BuildContext context) {
@@ -43,18 +43,11 @@ class SporKarti extends StatelessWidget {
                   const SizedBox(height: 5),
                   Text(
                     spor.altBaslik,
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey.shade500,
-                    ),
+                    style: TextStyle(fontSize: 14, color: Colors.grey.shade500),
                   ),
                 ],
               ),
-              Icon(
-                spor.ikon,
-                size: 40,
-                color: Colors.black54,
-              ),
+              Icon(spor.ikon, size: 40, color: Colors.black54),
             ],
           ),
           const SizedBox(height: 15),
@@ -68,11 +61,16 @@ class SporKarti extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00C9B7), // Görseldeki Turkuaz Renk
+                backgroundColor: const Color(
+                  0xFF00C9B7,
+                ), // Görseldeki Turkuaz Renk
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5),
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 30,
+                  vertical: 10,
+                ),
               ),
               child: const Text(
                 'BAŞLA',
@@ -82,7 +80,7 @@ class SporKarti extends StatelessWidget {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

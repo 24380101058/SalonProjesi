@@ -1,3 +1,15 @@
+buildscript {
+    repositories {
+        google()  // İşte eksik olan adresler bunlar!
+        mavenCentral()
+    }
+    dependencies {
+        // Firebase için gerekli olan satır:
+        classpath("com.google.gms:google-services:4.3.15")
+    }
+}
+
+// Dosyanın geri kalanı (allprojects vs.) aynen kalsın, dokunma.
 allprojects {
     repositories {
         google()

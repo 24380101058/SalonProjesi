@@ -4,7 +4,7 @@ import '../providers/salon_provider.dart';
 import '../widgets/spor_karti.dart';
 
 class AnaSayfa extends StatelessWidget {
-  const AnaSayfa({Key? key}) : super(key: key);
+  const AnaSayfa({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,18 +24,31 @@ class AnaSayfa extends StatelessWidget {
                 color: Color(0xFF00C9B7), // Logo rengi
                 shape: BoxShape.circle,
               ),
-              child: const Text("S", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              child: const Text(
+                "S",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             const SizedBox(width: 10),
             const Text(
               'SALON',
-              style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.account_circle, color: Colors.grey, size: 30),
+            icon: const Icon(
+              Icons.account_circle,
+              color: Colors.grey,
+              size: 30,
+            ),
             onPressed: () {},
           ),
         ],

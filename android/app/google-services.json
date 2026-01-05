@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "178269021884",
+    "project_id": "salonprojesi",
+    "storage_bucket": "salonprojesi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178269021884:android:652616e6cb306d7e95d2b9",
+        "android_client_info": {
+          "package_name": "com.example.salon_projesi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXYqEYHTc8s-2vraeVLUr35jNEjL3n05E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
